@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leftrightcount.leftrightcount">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- <activity -->
+        <!-- android:name=".TappingActivity" -->
+        <!-- android:label="@string/title_activity_tapping" -->
+        <!-- android:theme="@style/AppTheme.NoActionBar"> -->
+        <!--  -->
+        <!-- </activity> -->
+
+        <activity android:name=".TappingActivity">
+            <intent-filter>
+                <action android:name="com.leftrightcount.leftrightcount.TappingActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!--<activity android:name=".LeftTapping"/>-->
+
+        <activity android:name=".LeftTapping">
+            <intent-filter>
+                <action android:name="com.leftrightcount.leftrightcount.LeftTapping" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <!--<intent-filter>-->
+                <!--<action android:name="com.leftrightcount.leftrightcount.MainActivity" />-->
+
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity android:name=".RightTapping">
+            <intent-filter>
+                <action android:name="com.leftrightcount.leftrightcount.RightTapping" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+
+
+        <!--<activity android:name=".RightTapping"></activity>-->
+    </application>
+
+</manifest>
